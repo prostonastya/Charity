@@ -3772,8 +3772,6 @@ tbody.collapse.in {
   padding-right: 15px;
   padding-left: 15px;
   border-top: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch; }
   .navbar-collapse:before, .navbar-collapse:after {
     content: " ";
@@ -4080,8 +4078,7 @@ tbody.collapse.in {
   .navbar-default .navbar-form {
     border-color: transparent; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: transparent;
-    color: #fff; }
+    background-color: transparent; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #fff; }
@@ -6113,58 +6110,110 @@ button {
   .inner .inner-advantages {
     padding-bottom: 6.5vh; }
 
-.standart-section {
+.standard-section {
   padding: 120px 0; }
+  .standard-section .carousel-wrap {
+    padding-bottom: 80px; }
+    .standard-section .carousel-wrap .item h3 {
+      font-size: 28px;
+      color: #150c31;
+      margin-bottom: 25px; }
+    .standard-section .carousel-wrap .item p {
+      color: #807996; }
 
-.event-item .event-item-img {
-  position: relative; }
-  .event-item .event-item-img:hover .on-event-hover {
-    opacity: 1; }
-  .event-item .event-item-img .on-event-hover {
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: all .5s linear;
-    transition: all .5s linear; }
-    .event-item .event-item-img .on-event-hover a {
-      width: 60px;
-      height: 60px;
-      background: #cf1b41;
-      -webkit-border-radius: 50%;
-              border-radius: 50%;
-      color: #fff;
-      font-size: 25px;
+.campaigns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+  .campaigns .event-item {
+    text-align: left; }
+    .campaigns .event-item .event-item-img {
+      position: relative; }
+      .campaigns .event-item .event-item-img:hover .on-event-hover {
+        opacity: 1; }
+      .campaigns .event-item .event-item-img .on-event-hover {
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: all .5s linear;
+        transition: all .5s linear; }
+        .campaigns .event-item .event-item-img .on-event-hover a {
+          width: 60px;
+          height: 60px;
+          background: #cf1b41;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          color: #fff;
+          font-size: 25px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+    .campaigns .event-item .event-item-desq h6 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: #150c31;
+      font-weight: bold; }
+    .campaigns .event-item .event-item-desq p {
+      font-size: 12px;
+      margin-bottom: 25px; }
+    .campaigns .event-item .event-item-location .country {
+      font-size: 12px;
+      font-weight: bold;
+      color: #150c31;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
-
-.event-item .event-item-info dl {
-  display: inline-block; }
+              align-items: center;
+      margin-bottom: 10px; }
+      .campaigns .event-item .event-item-location .country:before {
+        content: '';
+        background: url(../img/country-ic.png) no-repeat;
+        display: inline-block;
+        width: 15px;
+        height: 18px; }
+    .campaigns .event-item .event-item-info dl {
+      display: inline-block; }
+      .campaigns .event-item .event-item-info dl ~ dl {
+        margin-left: 15px; }
+      .campaigns .event-item .event-item-info dl dt {
+        font-size: 14px;
+        color: #150c31; }
+      .campaigns .event-item .event-item-info dl dd {
+        font-size: 12px; }
+  .campaigns .btn-default {
+    margin-top: 75px; }
 
 .section-w-bg {
   padding: 50px 0;
@@ -6181,6 +6230,9 @@ button {
     background: url("../img/our-history-bg.jpg") no-repeat top center/cover; }
   .section-w-bg.white-text-color {
     color: #fff; }
+  .section-w-bg .section-w-bg-text h3 {
+    font-size: 28px;
+    margin-bottom: 25px; }
 
 /* Preload images */
 body:after {
