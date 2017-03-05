@@ -40,3 +40,58 @@
   }
 }
 
+.standart-section{
+  padding: 120px 0;
+}
+
+.event-item{
+  .event-item-img{
+    position: relative;
+    &:hover{
+      .on-event-hover{
+        opacity: 1;
+      }
+    }
+    .on-event-hover{
+      opacity: 0;
+      background-color: rgba(0,0,0, .3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;    
+      display: flex;  
+      justify-content: center;
+      align-items: center;
+      transition: all .5s linear;
+      a{
+        width: 60px;
+        height: 60px;
+        background: #cf1b41;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .event-item-info{
+    dl{
+      display: inline-block;
+    }    
+  }
+}
+.section-w-bg{
+  padding: 50px 0;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  &.story{
+    background: url('../img/our-history-bg.jpg') no-repeat top center / cover;
+  }
+  &.white-text-color{
+    color: #fff;
+  }
+}

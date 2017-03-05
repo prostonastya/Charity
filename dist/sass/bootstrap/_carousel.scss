@@ -173,7 +173,7 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -184,30 +184,16 @@
 
   li {
     display: inline-block;
-    width:  10px;
-    height: 10px;
-    margin: 1px;
+    width:  8px;
+    height: 8px;
+    margin: 8px;
     text-indent: -999px;
-    border: 1px solid $carousel-indicator-border-color;
+    // border: 1px solid $carousel-indicator-border-color;
     border-radius: 10px;
     cursor: pointer;
-
-    // IE8-9 hack for event handling
-    //
-    // Internet Explorer 8-9 does not support clicks on elements without a set
-    // `background-color`. We cannot use `filter` since that's not viewed as a
-    // background color by the browser. Thus, a hack is needed.
-    // See https://developer.mozilla.org/en-US/docs/Web/Events/click#Internet_Explorer
-    //
-    // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
-    // set alpha transparency for the best results possible.
-    background-color: #000 \9; // IE8
-    background-color: rgba(0,0,0,0); // IE9
+    background-color: #b8b6c1;
   }
-  .active {
-    margin: 0;
-    width:  12px;
-    height: 12px;
+  .active {   
     background-color: $carousel-indicator-active-bg;
   }
 }
@@ -216,16 +202,17 @@
 // -----------------------------
 // Hidden by default for smaller viewports
 .carousel-caption {
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: $carousel-caption-color;
+  padding-top: 0px;
+  padding-bottom: 45px;
+  color: $gray-base;
   text-align: center;
-  text-shadow: $carousel-text-shadow;
+  max-width: 720px;
+  margin: 0 auto;
+  h3{
+    color: $gray-dark; 
+
+  }
   & .btn {
     text-shadow: none; // No shadow for button elements in carousel-caption
   }
@@ -258,13 +245,13 @@
 
   // Show and left align the captions
   .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
+  //   left: 20%;
+  //   right: 20%;
+  //   padding-bottom: 30px;
   }
 
   // Move up the indicators
   .carousel-indicators {
-    bottom: 20px;
+    // bottom: 20px;
   }
 }
