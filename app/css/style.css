@@ -2913,28 +2913,28 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4; }
+  background-color: #150c31;
+  border-color: #150c31; }
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
-    background-color: #286090;
-    border-color: #122b40; }
+    background-color: #030208;
+    border-color: black; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74; }
+    background-color: #030208;
+    border-color: black; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74; }
+    background-color: #030208;
+    border-color: black; }
     .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
     .open > .btn-primary.dropdown-toggle:hover,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle.focus {
       color: #fff;
-      background-color: #204d74;
-      border-color: #122b40; }
+      background-color: black;
+      border-color: black; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     background-image: none; }
@@ -2942,10 +2942,10 @@ fieldset[disabled] a.btn {
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary.focus {
-    background-color: #337ab7;
-    border-color: #2e6da4; }
+    background-color: #150c31;
+    border-color: #150c31; }
   .btn-primary .badge {
-    color: #337ab7;
+    color: #150c31;
     background-color: #fff; }
 
 .btn-success {
@@ -6111,12 +6111,12 @@ button {
     padding-bottom: 6.5vh; }
 
 .standard-section {
-  padding: 120px 0; }
+  padding: 120px 0;
+  text-align: center; }
   .standard-section .carousel-wrap {
     padding-bottom: 80px; }
     .standard-section .carousel-wrap .item h3 {
       font-size: 28px;
-      color: #150c31;
       margin-bottom: 25px; }
     .standard-section .carousel-wrap .item p {
       color: #807996; }
@@ -6125,8 +6125,7 @@ button {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  text-align: center; }
+  display: flex; }
   .campaigns .event-item {
     text-align: left; }
     .campaigns .event-item .event-item-img {
@@ -6233,6 +6232,84 @@ button {
   .section-w-bg .section-w-bg-text h3 {
     font-size: 28px;
     margin-bottom: 25px; }
+  .section-w-bg.goods {
+    background: url("../img/goods-bg.jpg") no-repeat top center/cover; }
+  .section-w-bg.dark-text-color .section-w-bg-text h3 {
+    color: #150c31; }
+  .section-w-bg.dark-text-color .section-w-bg-text p {
+    margin-bottom: 35px; }
+
+.help-wraper {
+  text-align: left; }
+  .help-wraper .help-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .help-wraper .help-item .helping-icon {
+      width: 80px;
+      height: 80px;
+      border: 2px solid #ece8f1;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-right: 20px; }
+    .help-wraper .help-item .help-spec h6 {
+      color: #150c31;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 15px; }
+    .help-wraper .help-item .help-spec p {
+      width: 80%; }
+    .help-wraper .help-item:first-child {
+      margin-bottom: 60px; }
+
+.donors-wraper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .donors-wraper .donor-item .donor-item-img {
+    margin-bottom: 15px; }
+  .donors-wraper .donor-item h4 {
+    color: #150c31;
+    font-weight: bold;
+    margin-bottom: 5px; }
+
+footer {
+  height: 80px;
+  width: 100%;
+  background: #000;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  footer .navbar-right {
+    color: #fff; }
 
 /* Preload images */
 body:after {
