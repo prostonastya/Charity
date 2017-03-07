@@ -1,5 +1,12 @@
 @import "custom-variables";
 
+header{
+  transition: all .5s linear;
+  &.on-scroll{
+    background-color: #333;
+  }
+}
+
 .inner{
   height: 100vh;
   background-image: url('../img/inner-bg.jpg');
@@ -12,6 +19,10 @@
   justify-content: center;
   flex-wrap: wrap;
   align-content: space-between;
+  @media (max-height: 600 px) {
+    height: auto;
+    padding-bottom: 50px;
+  }
   .title{
     font-family: 'montserratregular';
   }
@@ -63,10 +74,14 @@
     text-align: left;
     .event-item-img{
       position: relative;
+      cursor: pointer;
       &:hover{
         .on-event-hover{
           opacity: 1;
         }
+      }
+      img{
+        width: 100%;
       }
       .on-event-hover{
         opacity: 0;
@@ -196,15 +211,16 @@
       
     }
     .help-spec{
+      width: 80%;
       h6{
         color: $gray-dark;
         font-weight: bold;
         font-size: 18px;
         margin-bottom: 15px;
       }
-      p{
-        width: 80%;
-      }
+      // p{
+      //   width: 80%;
+      // }
     }
     &:first-child{
       margin-bottom: 60px;      
@@ -214,6 +230,7 @@
 
 .donors-wraper{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;  
   .donor-item{    
     .donor-item-img{

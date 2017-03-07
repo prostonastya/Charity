@@ -6064,6 +6064,12 @@ button {
   cursor: pointer;
   padding: 0; }
 
+header {
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  header.on-scroll {
+    background-color: #333; }
+
 .inner {
   height: 100vh;
   background-image: url("../img/inner-bg.jpg");
@@ -6090,6 +6096,10 @@ button {
   -webkit-align-content: space-between;
       -ms-flex-line-pack: justify;
           align-content: space-between; }
+  @media (max-height: 600 px) {
+    .inner {
+      height: auto;
+      padding-bottom: 50px; } }
   .inner .title {
     font-family: 'montserratregular'; }
   .inner p {
@@ -6129,9 +6139,12 @@ button {
   .campaigns .event-item {
     text-align: left; }
     .campaigns .event-item .event-item-img {
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
       .campaigns .event-item .event-item-img:hover .on-event-hover {
         opacity: 1; }
+      .campaigns .event-item .event-item-img img {
+        width: 100%; }
       .campaigns .event-item .event-item-img .on-event-hover {
         opacity: 0;
         background-color: rgba(0, 0, 0, 0.3);
@@ -6269,13 +6282,13 @@ button {
           -ms-flex-pack: center;
               justify-content: center;
       margin-right: 20px; }
-    .help-wraper .help-item .help-spec h6 {
-      color: #150c31;
-      font-weight: bold;
-      font-size: 18px;
-      margin-bottom: 15px; }
-    .help-wraper .help-item .help-spec p {
+    .help-wraper .help-item .help-spec {
       width: 80%; }
+      .help-wraper .help-item .help-spec h6 {
+        color: #150c31;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 15px; }
     .help-wraper .help-item:first-child {
       margin-bottom: 60px; }
 
@@ -6284,6 +6297,9 @@ button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
