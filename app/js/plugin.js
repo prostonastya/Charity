@@ -4,7 +4,7 @@
 
 	$(window).on('scroll', function (){
 
-		if ($(this).scrollTop() > 20){
+		if ($(this).scrollTop() > 30){
 			header.addClass ('on-scroll');
 		} else { 
 			header.removeClass('on-scroll');

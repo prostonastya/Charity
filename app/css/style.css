@@ -3744,7 +3744,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border: 1px solid transparent; }
   .navbar:before, .navbar:after {
     content: " ";
@@ -3894,7 +3894,7 @@ tbody.collapse.in {
       display: none; } }
 
 .navbar-nav {
-  margin: 20px -15px;
+  margin: 0 -15px;
   background: #fff; }
   .navbar-nav > li > a {
     padding-top: 10px;
@@ -6268,6 +6268,9 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 767px) {
+    .section-w-bg {
+      text-align: center; } }
   .section-w-bg.story {
     background: url("../img/our-history-bg.jpg") no-repeat top center/cover; }
   .section-w-bg.white-text-color {
@@ -6334,12 +6337,23 @@ header {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .donors-wraper .donor-item .donor-item-img {
-    margin-bottom: 15px; }
-  .donors-wraper .donor-item h4 {
-    color: #150c31;
-    font-weight: bold;
-    margin-bottom: 5px; }
+  @media (max-width: 767px) {
+    .donors-wraper {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .donors-wraper .donor-item {
+    width: 20%; }
+    @media (max-width: 767px) {
+      .donors-wraper .donor-item {
+        width: 33.3%; } }
+    .donors-wraper .donor-item .donor-item-img {
+      margin-bottom: 15px; }
+    .donors-wraper .donor-item h4 {
+      color: #150c31;
+      font-weight: bold;
+      margin-bottom: 5px; }
 
 footer {
   width: 100%;
@@ -6359,6 +6373,11 @@ footer {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media (max-width: 767px) {
+      footer .footer-wrap span {
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 15px; } }
     footer .footer-wrap ul {
       display: -webkit-box;
       display: -webkit-flex;
@@ -6385,6 +6404,16 @@ footer {
           content: '';
           width: 0;
           height: 0; }
+      @media (max-width: 767px) {
+        footer .footer-wrap ul {
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center; } }
+    @media (max-width: 767px) {
+      footer .footer-wrap {
+        display: block;
+        text-align: center; } }
 
 /* Preload images */
 body:after {
