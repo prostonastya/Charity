@@ -6139,20 +6139,42 @@ header {
     width: 100%;
     text-align: center;
     padding-top: 17vh; }
+    @media (max-width: 767px) and (max-height: 600px), (max-width: 450px) {
+      .inner .inner-title {
+        padding-top: 0vh; } }
     .inner .inner-title .title {
       font-size: 60px;
       margin-bottom: 2vh; }
+      @media (max-width: 767px) {
+        .inner .inner-title .title {
+          font-size: 30px; } }
     .inner .inner-title p {
       font-size: 18px;
       padding: 0 5vw; }
+      @media (max-width: 767px) {
+        .inner .inner-title p {
+          font-size: 14px; } }
     .inner .inner-title .btn {
       margin-top: 9vh; }
+      @media (max-width: 767px) {
+        .inner .inner-title .btn {
+          margin-top: 2vh;
+          margin-bottom: 2vh; } }
   .inner .inner-advantages {
     padding-bottom: 6.5vh; }
+    @media (max-width: 767px) {
+      .inner .inner-advantages {
+        padding-bottom: 2vh; } }
+    @media (max-width: 767px) {
+      .inner .inner-advantages p {
+        padding-bottom: 10px; } }
 
 .standard-section {
   padding: 120px 0;
   text-align: center; }
+  @media (max-width: 767px) {
+    .standard-section {
+      padding: 60px 0; } }
   .standard-section .carousel-wrap {
     padding-bottom: 80px; }
     .standard-section .carousel-wrap .item h3 {
@@ -6270,7 +6292,8 @@ header {
           align-items: center; }
   @media (max-width: 767px) {
     .section-w-bg {
-      text-align: center; } }
+      text-align: center;
+      padding: 10px 0; } }
   .section-w-bg.story {
     background: url("../img/our-history-bg.jpg") no-repeat top center/cover; }
   .section-w-bg.white-text-color {
@@ -6280,6 +6303,9 @@ header {
     margin-bottom: 25px; }
   .section-w-bg.goods {
     background: url("../img/goods-bg.jpg") no-repeat top center/cover; }
+    @media (max-width: 767px) {
+      .section-w-bg.goods {
+        background-position-x: right; } }
   .section-w-bg.dark-text-color .section-w-bg-text h3 {
     color: #150c31; }
   .section-w-bg.dark-text-color .section-w-bg-text p {
@@ -6287,6 +6313,15 @@ header {
 
 .help-wraper {
   text-align: left; }
+  @media (min-width: 768px) {
+    .help-wraper .row + .row {
+      margin-top: 60px; } }
+  @media (min-width: 768px) {
+    .help-wraper [class^='col']:nth-child(even) .help-item {
+      padding-left: 50px; } }
+  @media (min-width: 768px) {
+    .help-wraper [class^='col']:nth-child(odd) .help-item {
+      padding-right: 50px; } }
   .help-wraper .help-item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -6296,6 +6331,9 @@ header {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 767px) {
+      .help-wraper .help-item {
+        padding-bottom: 20px; } }
     .help-wraper .help-item .helping-icon {
       width: 80px;
       height: 80px;
@@ -6315,15 +6353,17 @@ header {
           -ms-flex-pack: center;
               justify-content: center;
       margin-right: 20px; }
+      @media (max-width: 767px) {
+        .help-wraper .help-item .helping-icon {
+          width: 60px;
+          height: 60px; } }
     .help-wraper .help-item .help-spec {
-      width: 80%; }
+      width: 70%; }
       .help-wraper .help-item .help-spec h6 {
         color: #150c31;
         font-weight: bold;
         font-size: 18px;
         margin-bottom: 15px; }
-    .help-wraper .help-item:first-child {
-      margin-bottom: 60px; }
 
 .donors-wraper {
   display: -webkit-box;
@@ -6393,17 +6433,13 @@ footer {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
-        footer .footer-wrap ul li:before {
+        footer .footer-wrap ul li + li:before {
           content: '';
           width: 2px;
           height: 2px;
           background: #fff;
           margin-right: 3px;
           margin-left: 3px; }
-        footer .footer-wrap ul li:first-child:before {
-          content: '';
-          width: 0;
-          height: 0; }
       @media (max-width: 767px) {
         footer .footer-wrap ul {
           -webkit-box-pack: center;
