@@ -100,9 +100,11 @@ header{
     .btn{
       margin-top: 9vh;
       @media (max-width: 767px) {
-      margin-top: 2vh;
-      margin-bottom: 2vh;
-      }    
+      margin-top: 4vh;      
+      } 
+      @media (max-width: 991px) {      
+      margin-bottom: 4vh;
+      }   
     }
   }
   .inner-advantages{
@@ -126,6 +128,9 @@ header{
   }
   .carousel-wrap{
     padding-bottom: 80px;
+    @media (max-width: 767px) {
+    padding-bottom: 40px;
+    }
     .item{
       h3{
         font-size: 28px;          
@@ -249,7 +254,10 @@ header{
     .section-w-bg-text{      
       h3{
         font-size: 28px; 
-        margin-bottom: 25px;     
+        margin-bottom: 25px;           
+      }
+      p{
+        text-align: left;
       }    
     }
   &.goods{
